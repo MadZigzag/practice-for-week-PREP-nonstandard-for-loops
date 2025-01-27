@@ -12,7 +12,7 @@ describe("Problems", function () {
             expect(oddIndices([1, 2, 3])).to.deep.equal([2]);
             expect(oddIndices([1, 2, 3, 4])).to.deep.equal([2, 4]);
         });
-        
+
 
     })
 
@@ -31,7 +31,7 @@ describe("Problems", function () {
             expect(secondPower([])).to.deep.equal([]);
         });
         it('should return only indices of powers of 2', function () {
-            expect(secondPower([1, 2, 3, 4, 5, 6, 7, 8])).to.deep.equal([2, 3, 5]);
+            expect(secondPower([1, 2, 3, 4, 5, 6, 7, 8])).to.deep.equal([1, 2, 4, 8]);
         });
     })
 
@@ -41,13 +41,13 @@ describe("Problems", function () {
         });
         describe('nth power', function () {
             it('should return 2nd power indices', function() {
-                expect(nthPower([1, 2, 3, 4, 5, 6, 7, 8], 2)).to.deep.equal([2, 3, 5]);
+                expect(nthPower([1, 2, 3, 4, 5, 6, 7, 8], 2)).to.deep.equal([1, 2, 4, 8]);
             });
             it('should return 3rd power indices', function() {
-                expect(nthPower([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3)).to.deep.equal([2, 4, 10]);
+                expect(nthPower([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3)).to.deep.equal([1, 3, 9]);
             });
             it('should return 4th power indices', function() {
-                expect(nthPower([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17], 4)).to.deep.equal([2, 5, 17]);    
+                expect(nthPower([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17], 4)).to.deep.equal([1, 4, 16]);
             });
         });
     })
